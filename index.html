@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        header {
+            flex: 1 1 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 0.25em 0.5em;  
+            border-radius: 0.25em;
+            background-color: hsl(192, 25%, 80%);
+        }
+        a:hover, a:focus, a:active{
+            background-color: hsl(192, 53%, 50%);
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5em;
+        }
+
+        main {
+            max-width: none;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+        }
+
+        section {
+            flex: 1 1 30ch;
+        }
+
+
+        simple-clock {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: #f0f0f0;
+            border-radius: 0.5em;
+            padding: 1em;
+        }
+        
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            height: auto;
+            border-radius: 0.5em;
+        }
+    </style>
+    <title>Web Components Demo</title>
+  <script async type="module" crossorigin src="/assets/index-w0P0bC9x.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>A Tiny Collection of Web Components</h1>
+        <p>This is a tiny collection of web components that I created to help me learn about web components.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Resize Bug <a href="https://github.com/terrelcodes/webcomponents/src/components/ResizeBug.ts"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='feather%20feather-code'%3e%3cpolyline%20points='16%2018%2022%2012%2016%206'%3e%3c/polyline%3e%3cpolyline%20points='8%206%202%2012%208%2018'%3e%3c/polyline%3e%3c/svg%3e" alt="Source Code"></a></h2>
+            <resize-bug></resize-bug>
+            <p>Try resizing the window to see the bug.</p>
+        </section>
+        <section>
+            <h2>Simple Clock <a href="https://github.com/terrelcodes/webcomponents/src/components/SimpleClock.ts"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='feather%20feather-code'%3e%3cpolyline%20points='16%2018%2022%2012%2016%206'%3e%3c/polyline%3e%3cpolyline%20points='8%206%202%2012%208%2018'%3e%3c/polyline%3e%3c/svg%3e" alt="Source Code"></a></h2>
+            <simple-clock>Local time: </simple-clock>
+        </section>
+        <section>
+            <h2>Something Else</h2>
+            <img src="./ceo.webp" alt="Dang! I look good!">
+                <p>There isn't anything here yet. This is a placeholder to show how the layout works.</p>
+            <p>The picture is what I might see in the Mirror of Erised. I tried to get ChatGPT to generate a picture of me, but it refused. It is a great glamour shot, and it <i>kinda</i> looks like me, but you probably wouldn't be able to recognize me from it.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. </p>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
